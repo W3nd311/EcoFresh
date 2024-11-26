@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Fresh - Aveia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 40px;
+            background-image: url('imagem-aveia.jpg'); /* Insira o caminho da imagem */
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        h1 {
+            font-size: 2.8em;
+            margin: 0;
+        }
+        .content {
+            margin-top: 20px;
+            animation: fadeIn 1s ease;
+        }
+        .section, .product-info {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #ecdccd; /* Tom mais suave de #8b4513 */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .product-info h3, .section h2 {
+            color: #8b4513; /* Cor temática da aveia */
+        }
+        p, ul {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #8b4513; /* Cor de destaque */
+            color: #fff;
+        }
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .footer-content .company-name {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #ffebcd;
+            margin-top: 10px;
+        }
+        .back-button {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 10px 20px;
+            background-color: #8b4513; /* Cor temática para o botão */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .back-button:hover {
+            background-color: #5c3d2e; /* Efeito hover */
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+         <!-- Footer para o título "Aveia" -->
+  <footer style="background-color: #8b4513; padding: 20px 0;">
+            <h1 style="color: #fff; margin: 0;">Aveia</h1>
+        </footer>
+    </header>
+
+    <div class="content">
+        <div class="product-info">
+            <h3>Informações do Produto</h3>
+            <p><strong>Processo de Produção:</strong> A aveia da <strong>Eco Fresh</strong> é cultivada com total respeito ao meio ambiente. Utilizamos práticas agrícolas sustentáveis, com controle rigoroso de pesticidas e fertilizantes, para garantir que cada grão de aveia seja de altíssima qualidade e livre de contaminantes.</p>
+            <p><strong>Armazenamento e Transporte:</strong> Após a colheita, a aveia é armazenada em condições ideais para manter sua frescura e sabor. Utilizamos transporte apropriado para garantir que cada pacote de aveia chegue a você em perfeito estado.</p>
+        </div>
+
+        <div class="section">
+            <h2>Benefícios da Aveia</h2>
+            <p>A aveia é um alimento altamente nutritivo, trazendo inúmeros benefícios para a saúde. Confira como ela pode contribuir para o seu bem-estar:</p>
+            <ul>
+                <li><strong>Rica em Fibras:</strong> A aveia é uma excelente fonte de fibras solúveis, especialmente a beta-glucana, que ajuda a reduzir os níveis de colesterol e melhora a digestão.</li>
+                <li><strong>Fonte de Vitaminas e Minerais:</strong> Rica em vitaminas do complexo B, ferro e magnésio, a aveia contribui para o bom funcionamento do sistema nervoso e dos músculos.</li>
+                <li><strong>Ajuda no Controle de Açúcar no Sangue:</strong> As fibras da aveia retardam a absorção de carboidratos, auxiliando no controle dos níveis de açúcar no sangue e prevenindo picos glicêmicos.</li>
+                <li><strong>Promove Saciedade:</strong> A aveia tem um alto teor de fibras e proteínas, o que ajuda a aumentar a sensação de saciedade e a controlar o apetite.</li>
+                <li><strong>Aliada na Saúde do Coração:</strong> Com propriedades antioxidantes e fibras, a aveia é um excelente alimento para a saúde cardiovascular.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Botão de retorno -->
+    <a href="index.html" class="back-button">Voltar</a>
+
+    <!-- Footer principal com informações sobre a empresa -->
+    <footer>
+        <div class="footer-content">
+            <p class="company-name">Eco Fresh: A Qualidade em Cada Grão</p>
+            <p>A <strong>Eco Fresh</strong> é uma empresa comprometida em fornecer os melhores grãos, cultivados com práticas sustentáveis e respeitosas com o meio ambiente. Nossa missão é garantir que você tenha acesso a um produto fresco e de alta qualidade, sempre com o máximo de sabor e benefícios à sua saúde.</p>
+            <p>&copy; 2024 Eco Fresh. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

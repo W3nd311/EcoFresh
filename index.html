@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Fresh - Página Inicial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 40px;
+            background-color: #4b8b3b;
+            color: white;
+        }
+        h1 {
+            font-size: 2.8em;
+            margin: 0;
+        }
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .button {
+            background-color: #e8f7e4;
+            color: #4b8b3b;
+            padding: 20px 40px;  /* Aumenta o tamanho do botão */
+            margin: 15px;
+            border: 2px solid #4b8b3b;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.5em;  /* Aumenta a fonte */
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .button:hover {
+            background-color: #c6e5b9;
+        }
+        .sub-buttons {
+            display: none;
+            flex-direction: column;
+            margin-top: 10px;
+            width: 100%;
+            text-align: center;
+            animation: fadeSlideDown 0.3s ease-out forwards;
+        }
+        .sub-button {
+            background-color: #f0f8f4;
+            color: #4b8b3b;
+            padding: 12px 24px;  /* Aumenta o tamanho do subbotão */
+            margin: 10px auto;
+            border: 1px solid #4b8b3b;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;  /* Aumenta a fonte do subbotão */
+        }
+        .sub-button:hover {
+            background-color: #d9efda;
+        }
+        .back-button {
+            display: none;
+            margin: 10px auto;
+            background-color: #ffcccc;
+            color: #a33a3a;
+            padding: 10px 20px;
+            border: 2px solid #a33a3a;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+        .back-button:hover {
+            background-color: #ffc2c2;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4b8b3b;
+            color: #fff;
+        }
+
+        /* Animação de deslizar para baixo com fade */
+        @keyframes fadeSlideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Eco Fresh</h1>
+    </header>
+
+    <div id="buttons-container" class="buttons-container">
+        <!-- Botões principais -->
+        <div class="button" onclick="toggleSubButtons('frutas')">Frutas</div>
+        <div id="frutas" class="sub-buttons">
+            <a class="sub-button" href="maca.html">Maçã</a>
+        </div>
+
+        <div class="button" onclick="toggleSubButtons('legumes')">Legumes</div>
+        <div id="legumes" class="sub-buttons">
+            <a class="sub-button" href="cenoura.html">Cenoura</a>
+        </div>
+
+        <div class="button" onclick="toggleSubButtons('graos')">Grãos</div>
+        <div id="graos" class="sub-buttons">
+            <a class="sub-button" href="aveia.html">Aveia</a>
+        </div>
+
+        <div class="button" onclick="toggleSubButtons('origem-animal')">Produto de Origem Animal</div>
+        <div id="origem-animal" class="sub-buttons">
+            <a class="sub-button" href="carne_bovina.html">Carne Bovina</a>
+        </div>
+
+        <div class="button" onclick="toggleSubButtons('sementes')">Sementes de Chia</div>
+        <div id="sementes" class="sub-buttons">
+            <a class="sub-button" href="semente_de_chia.html">Semente de Chia</a>
+        </div>
+
+        <div class="button" onclick="toggleSubButtons('Plantas')">Plantas alimenticías não convencionais</div>
+        <div id="Plantas" class="sub-buttons">
+            <a class="sub-button" href="Peixinho_da_horta.html">Peixinho da horta</a>
+        </div>
+
+        <div class="button" onclick="toggleSubButtons('bebidas')">Bebidas Orgânicas</div>
+        <div id="bebidas" class="sub-buttons">
+            <a class="sub-button" href="suco_de_laranja.html">Suco de Laranja</a>
+        </div>
+    </div>
+
+    <button class="back-button" onclick="backToMain()">Voltar à Página Principal</button>
+
+    <footer>
+        <p>&copy; 2024 Eco Fresh. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleSubButtons(buttonId) {
+            // Seleciona o conjunto de subbotões
+            const subButtons = document.getElementById(buttonId);
+            const container = document.getElementById('buttons-container');
+
+            // Verifica se está visível e alterna entre mostrar/ocultar
+            if (subButtons.style.display === 'flex') {
+                subButtons.style.display = 'none';
+                container.style.height = 'auto'; // Retorna à altura original
+            } else {
+                // Oculta todos os outros subbotões
+                const allSubButtons = document.querySelectorAll('.sub-buttons');
+                allSubButtons.forEach(sub => sub.style.display = 'none');
+
+                // Exibe os subbotões atuais
+                subButtons.style.display = 'flex';
+            }
+        }
+
+        function backToMain() {
+            // Restaura os botões principais
+            const mainButtons = document.querySelectorAll('.button');
+            mainButtons.forEach(button => button.style.display = 'block');
+
+            // Oculta os subbotões e o botão de voltar
+            const allSubButtons = document.querySelectorAll('.sub-buttons');
+            allSubButtons.forEach(sub => sub.style.display = 'none');
+
+            const backButton = document.querySelector('.back-button');
+            backButton.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

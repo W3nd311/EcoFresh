@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Fresh - Carne Bovina</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 40px;
+            background-image: url('imagem-carne.jpg'); /* Insira o caminho da imagem */
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        h1 {
+            font-size: 2.8em;
+            margin: 0;
+        }
+        .content {
+            margin-top: 20px;
+            animation: fadeIn 1s ease;
+        }
+        .section, .product-info {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #ffe6e6;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2, .product-info h3 {
+            color: #a52a2a; /* Cor temática para carne bovina */
+        }
+        p, ul {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #a52a2a; /* Cor de destaque */
+            color: #fff;
+        }
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .footer-content .company-name {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #ffebcd;
+            margin-top: 10px;
+        }
+        .back-button {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 10px 20px;
+            background-color: #a52a2a; /* Cor temática para o botão */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .back-button:hover {
+            background-color: #8b0000; /* Efeito hover */
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+         <!-- Footer para o título "Carne Bovina" -->
+    <footer style="background-color: #a52a2a; padding: 20px 0;">
+            <h1 style="color: #fff; margin: 0;">Carne Bovina</h1>
+        </footer>
+    </header>
+
+    <div class="content">
+        <div class="product-info">
+            <h3>Informações do Produto</h3>
+            <p><strong>Processo de Produção:</strong> A carne bovina da <strong>Eco Fresh</strong> é obtida de animais criados de forma sustentável, respeitando o bem-estar animal e o meio ambiente. Nossas práticas garantem carne de alta qualidade e procedência, com rígido controle de sanidade e alimentação.</p>
+            <p><strong>Armazenamento e Transporte:</strong> Após o abate, a carne é processada e armazenada em condições controladas, garantindo frescor e qualidade. Utilizamos transporte refrigerado para assegurar que cada peça de carne bovina chegue até você com segurança e sabor ideais.</p>
+        </div>
+
+        <div class="section">
+            <h2>Benefícios da Carne Bovina</h2>
+            <p>A carne bovina é uma excelente fonte de nutrientes essenciais. Confira alguns dos benefícios que ela oferece para a sua saúde:</p>
+            <ul>
+                <li><strong>Fonte de Proteína:</strong> A carne bovina é rica em proteínas de alta qualidade, essenciais para o crescimento e a reparação dos tecidos do corpo.</li>
+                <li><strong>Rica em Ferro:</strong> Contém ferro heme, que é mais facilmente absorvido pelo corpo, ajudando a prevenir anemia e a manter a energia.</li>
+                <li><strong>Vitamina B12:</strong> Essencial para a saúde do sistema nervoso e para a formação de células sanguíneas.</li>
+                <li><strong>Creatina e Aminoácidos:</strong> Contribuem para o desempenho muscular e a saúde geral, sendo importantes para quem pratica atividades físicas.</li>
+                <li><strong>Zinco:</strong> Importante para o sistema imunológico, a carne bovina é uma excelente fonte desse mineral essencial.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Botão de retorno -->
+    <a href="index.html" class="back-button">Voltar</a>
+
+    <!-- Footer principal com informações sobre a empresa -->
+    <footer>
+        <div class="footer-content">
+            <p class="company-name">Eco Fresh: A Qualidade em Cada Corte de Carne</p>
+            <p>A <strong>Eco Fresh</strong> é uma empresa comprometida em fornecer carne de alta qualidade, com práticas sustentáveis e respeitosas ao meio ambiente. Nossa missão é garantir que você tenha acesso a um produto fresco e seguro, com todo o sabor e benefícios que a carne oferece à sua saúde.</p>
+            <p>&copy; 2024 Eco Fresh. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
