@@ -84,6 +84,14 @@
             color: #fff;
         }
 
+        .footer-logo {
+            display: block;
+            margin: 10px auto;
+            width: 3cm; /* Tamanho do logotipo */
+            height: 3cm;
+            object-fit: contain; /* Ajusta sem distorcer */
+        }
+
         /* Animação de deslizar para baixo com fade */
         @keyframes fadeSlideDown {
             from {
@@ -99,6 +107,8 @@
 </head>
 <body>
     <header>
+        <!-- Logotipo acima do título -->
+        <img src="logotipo.png" alt="Logotipo Eco Fresh" class="footer-logo">
         <h1>Eco Fresh</h1>
     </header>
 
