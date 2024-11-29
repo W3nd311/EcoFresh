@@ -73,6 +73,15 @@
         .back-button:hover {
             background-color: #b71c1c;
         }
+        /* Estilo para logotipo no rodapé */
+        .footer-logo {
+            margin: 10px auto;
+            display: block;
+            width: 3cm; /* Definindo o tamanho do logotipo para 3cm por 3cm */
+            height: 3cm;
+            object-fit: contain; /* Garante que o logotipo se ajuste ao tamanho sem distorcer */
+        }
+
         /* Animation */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
@@ -111,9 +120,12 @@
     <div class="button-container">
         <a class="back-button" href="index.html">Voltar</a>
     </div>
+
     <!-- Footer principal com informações sobre a empresa -->
     <footer>
         <div class="footer-content">
+            <!-- Logotipo no rodapé -->
+            <img src="logotipo.png" alt="Logotipo Eco Fresh" class="footer-logo">
             <p class="company-name">Eco Fresh</p>
             <p>&copy; 2024 Eco Fresh. Todos os direitos reservados.</p>
         </div>
